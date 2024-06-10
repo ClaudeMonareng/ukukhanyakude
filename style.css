@@ -44,7 +44,7 @@ section{
 }
 
 .background{
-    background: url(../images/background.png) no-repeat;
+    background: url(../images/bckground.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
