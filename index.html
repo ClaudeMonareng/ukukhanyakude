@@ -132,7 +132,7 @@
             <div class="box">
                 <img src="images/regalia3.jpg" alt="">
                 <div class="info">
-                    <a href="creativeEvents.html"><h3>Our Regalia</h3></a>
+                    <a href="regalia.html"><h3>Our Regalia</h3></a>
                 </div>
             </div>
             <div class="box">
@@ -156,7 +156,7 @@
             <div class="box">
                 <img src="images/hygiene.jpg" alt="">
                 <div class="info">
-                    <a href="sportsEvents.html"><h3>Hygiene and Care</h3></a>
+                    <a href="hygieneAndCare.html"><h3>Hygiene and Care</h3></a>
                 </div> 
             </div>
         </div>
@@ -167,7 +167,7 @@
     <section class="teacher background" id="teacher">
     
         <h1 class="heading">Our Amazing Teachers</h1>
-
+        
         <div class="box-container">
             <div class="box">
                 <img src="images/images3.jpg" alt="">
@@ -252,7 +252,7 @@
 
         <div class="testimonials-row">
             <div class="testimonial-col">
-                <img src="/images/testimony.jpg" alt="testimonials">
+                <img src="images/testimony.jpg" alt="testimonials">
                 <div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores quibusdam iste iusto velit rem
                         necessitatibus atque animi tempore voluptas officiis.</p>
@@ -265,7 +265,7 @@
                 </div>
             </div>
             <div class="testimonial-col">
-                <img src="/images/testimonial.jpg" alt="testimonials">
+                <img src="images/testimonial.jpg" alt="testimonials">
                 <div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores quibusdam iste iusto velit rem
                         necessitatibus atque animi tempore voluptas officiis.</p>
@@ -282,11 +282,12 @@
 
     <!-- CONTACT SECTION -->
 
+    <h1 class="heading">Contact Us</h1>
     <section class="contact background" id="contact">
         <div class="row">
             <div class="contact-info">
                 <div class="box">
-                    <h3 class="title">Contact Details </h3>
+                    <h3 class="title">Contact Details</h3>
                     <p> <i class="fas fa-map-marker-alt"></i> Dicks Halt, Newcastle, KwaZulu-Natal, South Africa </p>
                     <p> <i class="fas fa-envelope"></i>Head Teacher and Supervisor: Mrs. Konjelwayo Thembisile </p>
                     <p> <i class="fas fa-phone"></i> 082 092 6876 </p>
@@ -299,7 +300,7 @@
                     <a href="#" class="fab fa-linkedin"></a>
                 </div>
                 <div class="box">
-                    <h3 class="title">Operating Times </h3>
+                    <h3 class="title">Operating Times</h3>
                     <p>Mondays to Fridays: 06:30 - 15:00 </p>
                     <p>Saturdays: Closed </p>
                     <p>Sundays: Closed </p>
@@ -327,6 +328,30 @@
             menu.classList.remove('fa-times');
             navbar.classList.remove('nav-toggle');
         }
+
+        // PORTFOLIO SECTION - MODAL
+
+        const portfolioModals = document.querySelectorAll(".portfolio-modal");
+        const imgCards = document.querySelectorAll(".img-card");
+        const portfolioCloseBtns= document.querySelectorAll(".portfolio-close-btn");
+
+        var portfolioModal = function(modalClick){
+            portfolioModals[modalClick].classList.add("active");
+        }
+        imgCards.forEach((imgCard, i) => {
+            imgCard.addEventListener("click", () => {
+                portfolioModal(i);
+            });
+        });
+
+        portfolioCloseBtns.forEach((portfolioCloseBtn) => {
+            portfolioCloseBtn.addEventListener("click", () => {
+            portfolioModals.forEach((portfolioModalView) => {
+                    portfolioModalView.classList.remove("active");
+                });
+            });
+        });
+        
     </script>
 </body>
 </html>
