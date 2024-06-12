@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
  
 :root{
     --red:#a105af;
@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
     text-transform: none;
     text-decoration: none;
     outline: none;
@@ -123,6 +123,7 @@ header a img{
     font-size: 2.5rem;
     width: 5em;
     height: 2.5em;
+    margin-left: -3em;
     border-radius: 20px;
 }
 
@@ -144,6 +145,13 @@ header .navbar a:hover{
     cursor: pointer;
     border-radius: .5rem;
     display: none;
+}
+
+header a h3{
+    font-size: 2em;
+    margin: -2em 3em auto 3em;
+    color: var(--red);
+    font-weight: 600;
 }
 
 /* HOME SECTION */
@@ -404,6 +412,7 @@ header .navbar a:hover{
 .portfolio-list .img-card{
     position: relative;
     max-width: 100%;
+    width: 35em;
     height: 360px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
@@ -681,6 +690,20 @@ header .navbar a:hover{
 /* MEDIA QUERIES */
 
 @media(max-width:1200px){
+
+    header a img{
+        font-size: 2.5rem;
+        width: 5em;
+        height: 2.5em;
+        margin-left: -1em;
+        border-radius: 20px;
+    }
+
+    header a h3{
+        font-size: 2em;
+        margin: -2em 3em auto 5.5em;;
+        color:var(--red);
+    }
     
     html{
         font-size: 55%;
@@ -708,7 +731,7 @@ header .navbar a:hover{
         border-radius: 10px;
         margin-bottom: 5%;
         text-align: left;
-        background: url(../images/card-bg2.png);
+        background: url(images/card-bg2.png);
         background-size: cover;
         background-position: center;
         box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
@@ -733,6 +756,20 @@ header .navbar a:hover{
 
 @media(max-width:768px){
 
+    header a img{
+        font-size: 2.5rem;
+        width: 5em;
+        height: 2.5em;
+        margin-left: -1em;
+        border-radius: 20px;
+    }
+
+    header a h3{
+        font-size: 2em;
+        margin: -2em 3em auto 5.5em;;
+        color:var(--red);
+    }
+
     #menu-bars{
         display: block;
     }
@@ -744,7 +781,7 @@ header .navbar a:hover{
         right: 0;
         height: calc(100vh - 70%);
         border-top: .2rem solid #333;
-        background: url(../images/card-bg1.png) no-repeat;
+        background: url(images/card-bg1.png) no-repeat;
         background-size: cover;
         background-position: center;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -813,7 +850,7 @@ header .navbar a:hover{
         border-radius: 10px;
         margin-bottom: 5%;
         text-align: left;
-        background: url(../images/card-bg2.png);
+        background: url(images/card-bg2.png);
         background-size: cover;
         background-position: center;
         box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
@@ -839,8 +876,27 @@ header .navbar a:hover{
 
 @media(max-width:450px){
 
+    header a img{
+        font-size: 2.5rem;
+        width: 5em;
+        height: 2.5em;
+        margin-left: -1em;
+        border-radius: 20px;
+    }
+
+    header a h3{
+        font-size: 2em;
+        margin: -2em 3em auto 5.5em;;
+        color:var(--red);
+    }
+
     html{
         font-size: 50%;
+    }
+
+    .teacher .box-container .box{
+        height: 50vh;
+        max-height: 100%;
     }
 
     .testimonials-row {
@@ -853,7 +909,7 @@ header .navbar a:hover{
         border-radius: 10px;
         margin: 5% 0;
         text-align: left;
-        background: url(../images/card-bg2.png);
+        background: url(images/card-bg2.png);
         background-size: cover;
         background-position: center;
         box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
