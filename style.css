@@ -43,14 +43,14 @@ section{
     padding-bottom: 9rem;
 }
 
-.header-background{
-    background: url(images/waterfalls.jpg) no-repeat;
-    background-size:auto;
-    background-position: center;
-}
-
 .background{
     background: url(images/background.png) no-repeat;
+    background-size: cover;
+    background-position:bottom;
+}
+
+.background2{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.3)), url(images/background.png);
     background-size: cover;
     background-position:bottom;
 }
@@ -111,32 +111,50 @@ section{
 
 header{
     position: fixed;
+    display: flex;
     top: 0;
     left: 0;
     right: 0;
-    background: url(images/header-bg.png) no-repeat;
-    background-size: cover;
     background-position: bottom;
+    background-size: cover;
     z-index: 10000;
-    padding: 1.5rem 7%;
-    padding-bottom: 6rem;
-    display: flex;
+    padding: 5rem 5%;
     align-items: center;
+    padding-bottom: 4rem;
     justify-content: space-between;
+    height: 10vh;
+}
+
+header.sticky{
+    backdrop-filter: blur(20px);
+    /* background-color: aliceblue; */
+    /* background: url(images/header-bg.png) no-repeat; */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.2));
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+}
+
+header .logo {
+    display: flex;
+    margin: 0 0 0 10px;
 }
 
 header a img{
-    font-size: 2.5rem;
-    width: 5em;
+    width: 4em;
     height: 2.5em;
-    margin-left: -3em;
-    border-radius: 20px;
+    padding: 0 1.2em -3em;
+    font-size: 2.5rem;
+    border-radius: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+header .navbar{
+    margin-left: 25em;
 }
 
 header .navbar a{
     font-size: 2rem;
     margin-left: 2rem;
-    color: #333;
+    color: #ffffff;
 }
 
 header .navbar a:hover{
@@ -155,7 +173,7 @@ header .navbar a:hover{
 
 header a h3{
     font-size: 2em;
-    margin: -2em 3em auto 3em;
+    padding: 1em 0 0 10px;
     color: var(--red);
     font-weight: 600;
 }
@@ -212,53 +230,7 @@ header a h3{
     max-height: 100%;
 }
 
-/* FIRST BOX CONTAINER */
-
-.features .first-box-container{
-    /* margin-left: 10em; */
-}
-
-.features .first-box-container .title{
-    font-size: 3rem;
-    color: var(--red);
-    padding: 1rem 0;
-}
-
-.features .first-box-container .box{
-    display: flex;
-    align-items: center;
-    padding: 1rem 0;
-}
-
-.features .first-box-container .box img{
-    height: 6rem;
-    width: 6rem;
-    margin: 2.5rem;
-}
-
-.features .first-box-container .box .info{
-    width: 100%;
-}
-
-.features .first-box-container .box .info h3{
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.features .first-box-container .box .info p{
-    font-size: 1.7rem;
-    color: #666;
-}
-
-.features .first-box-container:first-child .box{
-    flex-flow: row-reverse;
-}
-
-.features .first-box-container:first-child{
-    text-align: right;
-}
-
-/* SECOND BOX CONTAINER */
+/* BOX CONTAINER */
 
 .features .box-container .title{
     font-size: 3rem;
@@ -305,7 +277,10 @@ header a h3{
 }
 
 .about .image img{
-    width: 45vw;
+    width: 40vw;
+    height: 75vh;
+    margin-right: 3em;
+    object-fit: cover;
 }
 
 .about .content h3{
@@ -393,7 +368,7 @@ header a h3{
     flex: 1 1 27rem;
     padding: 2rem 3rem;
     margin: 1rem;
-    height: 78vh;
+    height: 60vh;
     max-height: 100%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border: .1rem solid rgba(0, 0, 0, .3);
@@ -423,7 +398,11 @@ header a h3{
 
 .teacher .box-container .box span{
     font-size: 1.7rem;
-    color:var(--red);
+    color: var(--red);
+}
+
+.teacher .box-container .box p{
+    font-size: 2rem;
 }
 
 .teacher .box-container .box .share{
@@ -498,17 +477,21 @@ header a h3{
     transform: translateY(0);
     opacity: 1;
 }
+
 .portfolio-list .img-card .info h3{
     font-size: 1.5em;
 }
+
 .portfolio-list .img-card .info span{
     font-size: 1.2em;
 }
+
 .portfolio-list .img-card img{
     width: 100%;
     height: 100%;
     object-fit:cover;
 }
+
 .portfolio-modal{
     z-index: 999999;
     position: fixed;
@@ -522,10 +505,12 @@ header a h3{
     opacity:0;
     transition: .3s ease;
 }
+
 .portfolio-modal.active{
     visibility: visible;
     opacity: 1;
 }
+
 .portfolio-modal-body{
     position: relative;
     background: var(--modal-bg-color);
@@ -594,10 +579,11 @@ header a h3{
 }
 
 .testimonial-col img {
+    width: 12em;
+    width: 100%;
     height: 120px;
-    margin-left: 5px;
-    margin-right: 30px;
-    border-radius: 50px;
+    margin: 0 30px 0 5px;
+    border-radius: 5em;
 }
 
 .testimonial-col p {
@@ -745,18 +731,27 @@ header a h3{
 
 @media(max-width:1200px){
 
+    header .logo {
+        display: flex;
+        padding-top: 4.5em;
+        text-align: center;
+    }
+    
     header a img{
-        font-size: 2.5rem;
-        width: 5em;
+        width: 4em;
         height: 2.5em;
-        margin-left: -1em;
-        border-radius: 20px;
+        padding: 0 1.2em -3em;
+        font-size: 2.5rem;
+        border-radius: 100%;
+        object-fit: fill;
+        object-position: center;
     }
 
     header a h3{
         font-size: 2em;
-        margin: -2em 3em auto 5.5em;;
-        color:var(--red);
+        padding: 1em 0 0 10px;
+        color: var(--red);
+        font-weight: 600;
     }
     
     html{
@@ -793,6 +788,13 @@ header a h3{
         display: flex;
     }
 
+    .testimonial-col img {
+        width: 15em;
+        height: 120px;
+        margin-left: 15em;
+        border-radius: 100%;
+    }
+
     .testimonial-col div p{
         margin-top: 5%;
     }
@@ -805,18 +807,27 @@ header a h3{
 
 @media(max-width:768px){
 
+    header .logo {
+        display: flex;
+        padding-top: 4.5em;
+        text-align: center;
+    }
+    
     header a img{
-        font-size: 2.5rem;
-        width: 5em;
+        width: 4em;
         height: 2.5em;
-        margin-left: -1em;
-        border-radius: 20px;
+        padding: 0 1.2em -3em;
+        font-size: 2.5rem;
+        border-radius: 100%;
+        object-fit: fill;
+        object-position: center;
     }
 
     header a h3{
         font-size: 2em;
-        margin: -2em 3em auto 5.5em;
-        color:var(--red);
+        padding: 1em 0 0 10px;
+        color: var(--red);
+        font-weight: 600;
     }
 
     #menu-bars{
@@ -922,6 +933,13 @@ header a h3{
         display: grid;
     }
 
+    .testimonial-col img {
+        width: 15em;
+        height: 120px;
+        margin-left: 12em;
+        border-radius: 100%;
+    }
+
     .testimonial-col div p{
         margin-top: 5%;
     }
@@ -939,18 +957,42 @@ header a h3{
 
 @media(max-width:450px){
 
+    header{
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-position: bottom;
+        background-size: cover;
+        z-index: 10000;
+        padding: 1rem 5%;
+        align-items: center;
+        padding-bottom: 1rem;
+        justify-content: space-between;
+        height: 15vh;
+    }
+
+    header .logo {
+        display: flex;
+        padding: 1em 8em;
+    }
+    
     header a img{
+        width: 5.2em;
+        height: 3.8em;
+        padding: 1em 1.2em -3em;
         font-size: 2.5rem;
-        width: 5em;
-        height: 2.5em;
-        margin-left: -1em;
-        border-radius: 20px;
+        border-radius: 100%;
+        object-fit: fill;
+        object-position: center;
     }
 
     header a h3{
-        font-size: 2em;
-        margin: -2em 3em auto 5.5em;;
-        color:var(--red);
+        font-size: 2.5em;
+        padding: 1.5em 0 0 10px;
+        color: var(--red);
+        font-weight: 600;
     }
 
     html{
@@ -958,8 +1000,13 @@ header a h3{
     }
 
     .teacher .box-container .box{
-        height: 50vh;
+        height: 45vh;
         max-height: 100%;
+    }
+
+    .teacher .box-container .box p{
+        margin-top: 1em;
+        font-size: 1.5em;
     }
 
     .testimonials-row {
@@ -982,8 +1029,21 @@ header a h3{
         height: 50vh;
     }
 
+    .testimonial-col img {
+        width: 15em;
+        height: 120px;
+        margin-left: 7em;
+        border-radius: 100%;
+    }
+
     .testimonial-col div p{
-        margin: 5% 0;
+        margin: 3% 0;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .testimonial-col div h3{
+        text-align: center;
     }
     
     .features .box-container,
@@ -996,6 +1056,13 @@ header a h3{
         flex-flow: column;
     }
 
+    .contact{
+        display: grid;
+    }
+
+    iframe{
+        width: 91vw;
+    }
     .contact .row{
         flex-flow: column;
         align-items: flex-start;
