@@ -1000,7 +1000,7 @@ header a h3{
     }
 
     .teacher .box-container .box{
-        height: 45vh;
+        height: 49vh;
         max-height: 100%;
     }
 
@@ -1026,7 +1026,7 @@ header a h3{
         padding: 25px;
         cursor: pointer;
         display: grid;
-        height: 50vh;
+        height: 58vh;
     }
 
     .testimonial-col img {
