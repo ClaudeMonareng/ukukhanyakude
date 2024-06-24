@@ -278,9 +278,13 @@ header a h3{
 
 .about .image img{
     width: 40vw;
-    height: 75vh;
+    height: 80vh;
     margin-right: 3em;
     object-fit: cover;
+}
+
+.about .content{
+    padding-bottom: 1em;
 }
 
 .about .content h3{
@@ -289,6 +293,7 @@ header a h3{
 }
 
 .about .content p{
+    line-height: 1em;
     font-size: 1.7rem;
     color: #666;
     padding: 1rem 0;
