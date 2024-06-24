@@ -238,7 +238,19 @@ header a h3{
     padding: 1rem 0;
 }
 
+.features .box-container1 .title{
+    font-size: 3rem;
+    color: var(--red);
+    padding: 1rem 0;
+}
+
 .features .box-container .box{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.features .box-container1 .box{
     display: flex;
     align-items: center;
     padding: 1rem 0;
@@ -250,12 +262,28 @@ header a h3{
     margin: 2.5rem;
 }
 
+.features .box-container1 .box img{
+    height: 6rem;
+    width: 6rem;
+    margin: 2.5rem;
+}
+
 .features .box-container .box .info h3{
     font-size: 2.5rem;
     color: #333;
 }
 
+.features .box-container1 .box .info h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+
 .features .box-container .box .info p{
+    font-size: 1.7rem;
+    color: #666;
+}
+
+.features .box-container1 .box .info p{
     font-size: 1.7rem;
     color: #666;
 }
@@ -285,16 +313,16 @@ header a h3{
 
 .about .content{
     padding-bottom: 1em;
+    margin-bottom: 6em;
 }
 
 .about .content h3{
-    line-height: 1em;
     font-size: 4rem;
     color: var(--red);
 }
 
 .about .content p{
-    line-height: 1em;
+    line-height: 1.2em;
     font-size: 1.7rem;
     color: #666;
     padding: 1rem 0;
@@ -458,9 +486,11 @@ header a h3{
     overflow: hidden;
     cursor: pointer;
 }
+
 .portfolio-list .img-card .overlay{
     transition: 1s ease;
 }
+
 .portfolio-list .img-card:hover .overlay{
     z-index: 777;
     position: absolute;
@@ -468,6 +498,7 @@ header a h3{
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
+
 .portfolio-list .img-card .info{
     z-index: 777;
     position: absolute;
@@ -479,6 +510,7 @@ header a h3{
     opacity: 0;
     transition: .5s ease;
 }
+
 .portfolio-list .img-card:hover .info{
     transform: translateY(0);
     opacity: 1;
@@ -528,9 +560,11 @@ header a h3{
     transform: translateY(-50px);
     transition: .5s ease;
 }
+
 .portfolio-modal.active .portfolio-modal-body{
     transform: translateY(0);
 }
+
 .portfolio-close-btn{
     position: absolute;
     top: 0;
@@ -538,9 +572,11 @@ header a h3{
     margin: 20px;
     cursor: pointer; 
 }
+
 .portfolio-modal-body h3{
     font-size: 1.5em;
 }
+
 .portfolio-modal-body img{
     max-width: 100%;
     margin: 20px 0;
@@ -627,10 +663,6 @@ header a h3{
     padding: 2rem;
 }
 
-.contact .row .contact-form{
-    padding: 2rem;
-}
-
 .contact .row .btn{
     cursor: pointer;
 }
@@ -675,39 +707,13 @@ header a h3{
     color: #fff;
 }
 
-.contact .row .contact-info .box form input[type="email"]{
-    padding: 1rem 1.5rem;
-    font-size: 1.5rem;
-    color: #666;
-    text-transform: none;
-    border-radius: 5rem;
-    border: 0.1rem solid rgba(0, 0, 0, .3);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+iframe{
+    width: 40vw;
+    height: 80vh;
+    margin-left: 6em;
 }
 
-.contact .row .contact-form h3{
-    font-size: 3rem;
-    color: #333;
-    padding-bottom: 1rem;
-}
-
-.contact .row .contact-form .box{
-    width: 100%;
-    border-radius: 5rem;
-    padding: 1rem 1.5rem;
-    font-size: 1.7rem;
-    color: #666;
-    margin: 1rem 0;
-    border: 0.1rem solid rgba(0, 0, 0, .3);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    text-transform: none;
-}
-
-.contact .row .contact-form .message{
-    border-radius: 2rem;
-    height: 19.8rem;
-    resize:none;
-}
+/* FOOTER */
 
 .footer{
     position: relative;
@@ -1005,6 +1011,14 @@ header a h3{
         font-size: 50%;
     }
 
+    /* ABOUT */
+
+    .about .content p{
+        line-height: 1.5em;
+    }
+
+    /* SERVICES */
+
     .services .box-container .box{
         overflow: hidden;
         height: 30rem;
@@ -1016,8 +1030,11 @@ header a h3{
         cursor: pointer;
     
     }
+
+    /* TEACHERS */
+
     .teacher .box-container .box{
-        height: 49vh;
+        height: 55vh;
         max-height: 100%;
     }
 
@@ -1025,6 +1042,8 @@ header a h3{
         margin-top: 1em;
         font-size: 1.5em;
     }
+
+    /* TESTIMONIALS */
 
     .testimonials-row {
         margin-top: 5%;
@@ -1062,24 +1081,34 @@ header a h3{
     .testimonial-col div h3{
         text-align: center;
     }
-    
-    .features .box-container,
-    .features .box-container:first-child{
+
+    /* FEATURES */
+
+    .features .box-container1{
         text-align: center;
     }
-
-    .features .box-container .box,
-    .features .box-container:first-child{
+    
+    .features .box-container1 .box,
+    .features .box-container1{
         flex-flow: column;
     }
+
+    .features .box-container{
+        text-align: center;
+        margin-top: 5em;
+    }
+    
+    .features .box-container .box,
+    .features .box-container{
+        flex-flow: column;
+    }
+
+    /* CONTACT */
 
     .contact{
         display: grid;
     }
 
-    iframe{
-        width: 91vw;
-    }
     .contact .row{
         flex-flow: column;
         align-items: flex-start;
@@ -1087,5 +1116,11 @@ header a h3{
 
     .contact img{
         display: none;
+    }
+    
+    iframe{
+        width: 91vw;
+        height: 60vh;
+        margin-left: 0;
     }
 }
