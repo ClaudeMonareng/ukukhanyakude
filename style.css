@@ -999,6 +999,17 @@ header a h3{
         font-size: 50%;
     }
 
+    .services .box-container .box{
+        overflow: hidden;
+        height: 30rem;
+        flex: 1 1 30rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        position: relative;
+        cursor: pointer;
+    
+    }
     .teacher .box-container .box{
         height: 49vh;
         max-height: 100%;
