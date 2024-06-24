@@ -288,6 +288,7 @@ header a h3{
 }
 
 .about .content h3{
+    line-height: 1em;
     font-size: 4rem;
     color: var(--red);
 }
