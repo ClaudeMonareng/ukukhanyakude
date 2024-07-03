@@ -5,7 +5,6 @@
 }
 
 *{
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -14,9 +13,12 @@
     outline: none;
     border: none;
     transition: all .2s ease-out;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     max-width: 2500px;
+}
+
+p, ul{
+    text-align: justify;
 }
 
 *::selection{
@@ -50,14 +52,14 @@ section{
 }
 
 .background2{
-    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.3)), url(images/background.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.3)), url(images/stand.jpg);
     background-size: cover;
     background-position:bottom;
 }
 
 .btn{
     display: inline-block;
-    margin-top: 1rem;
+    margin: 1rem auto auto 25rem;
     padding: .7rem 3rem;
     border-radius: 5rem;
     background: var(--red);
@@ -123,6 +125,8 @@ header{
     padding-bottom: 4rem;
     justify-content: space-between;
     height: 10vh;
+    margin: 0 auto;
+    max-width: 2500px;
 }
 
 header.sticky{
@@ -147,6 +151,7 @@ header a img{
     object-fit: fill;
     object-position: center;
 }
+
 header .navbar{
     margin-left: 18em;
 }
@@ -185,12 +190,20 @@ header a h3{
     align-items: center;
 }
 
+.home .content{
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5));
+    padding: 5em;
+}
+
 .home .content h1{
     font-size: 5rem;
     color: var(--red);
+    text-align: center;
 }
 
 .home .content h1 span{
+    text-transform: uppercase;
     font-size: 1.5em;
     font-weight: 600;
     background: linear-gradient(to top, transparent 0%, #55c047 40%);
@@ -201,19 +214,14 @@ header a h3{
 
 .home .content h3{
     font-size: 3rem;
-    color: #333;
+    color: #ffffff;
+    text-align: center;
 }
 
 .home .content p{
     font-size: 1.7rem;
     color: #666;
     padding: 1rem 0;
-}
-
-.home .image img{
-    width: 36vw;
-    position: relative;
-    top: -17rem;
 }
 
 /* FEATURES SECTION */
@@ -292,8 +300,16 @@ header a h3{
     flex-flow: row-reverse;
 }
 
+.features .box-container1:first-child .box{
+    flex-flow: row-reverse;
+}
+
 .features .box-container:first-child{
     text-align: right;
+}
+
+.features .box-container1:first-child{
+    text-align: left;
 }
 
 /* ABOUT SECTION */
@@ -322,7 +338,7 @@ header a h3{
 }
 
 .about .content p{
-    line-height: 1.2em;
+    line-height: 1.65em;
     font-size: 1.7rem;
     color: #666;
     padding: 1rem 0;
@@ -969,6 +985,11 @@ iframe{
 
 @media(max-width:450px){
 
+    .btn{
+        margin: 1rem auto auto 0rem;
+        padding: .7rem 3rem;
+    }
+
     header{
         position: fixed;
         display: flex;
@@ -1009,6 +1030,12 @@ iframe{
 
     html{
         font-size: 50%;
+    }
+
+    .home .content{
+        padding: 2em;
+        line-height: 4.5em;
+        margin-left:-.6em;
     }
 
     /* ABOUT */
@@ -1084,23 +1111,25 @@ iframe{
 
     /* FEATURES */
 
-    .features .box-container1{
-        text-align: center;
-    }
-    
-    .features .box-container1 .box,
-    .features .box-container1{
-        flex-flow: column;
-    }
-
-    .features .box-container{
-        text-align: center;
-        margin-top: 5em;
-    }
-    
     .features .box-container .box,
     .features .box-container{
         flex-flow: column;
+    }
+
+    .features .box-container1 .box,
+    .features .box-container1{
+        display:grid;
+        text-align: center;
+    }
+
+    .features .box-container1 .box img{
+        margin-left: 23em;
+    }
+
+    .features .box-container,
+    .features .box-container1{
+        text-align: center;
+        margin-top: 5em;
     }
 
     /* CONTACT */
