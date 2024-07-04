@@ -30,6 +30,7 @@
         var portfolioModal = function(modalClick){
             portfolioModals[modalClick].classList.add("active");
         }
+        
         imgCards.forEach((imgCard, i) => {
             imgCard.addEventListener("click", () => {
                 portfolioModal(i);
