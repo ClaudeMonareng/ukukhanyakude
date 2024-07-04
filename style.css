@@ -738,7 +738,7 @@ iframe{
 @media(max-width: 1200px){
 
     header{
-        height: 13vh;
+       min-height: 22vh;
     }
 
     header .logo {
@@ -793,8 +793,11 @@ iframe{
         flex-basis: 50%;
     }
 
+    /* TEACHER */
+
     .teacher .box-container .box{
         overflow-y: scroll;
+        height: 40rem;
     }
 
     /* TESTIMONIAL */
@@ -859,7 +862,7 @@ iframe{
         align-items: center;
         padding-bottom: 1rem;
         justify-content: space-between;
-        height: 10vh;
+        min-height: 15vh;
     }
 
     header .logo img{
@@ -957,8 +960,6 @@ iframe{
     /* TEACHER */
     .teacher .box-container .box{
         overflow-y: scroll;
-        height: 55vh;
-        max-height: 100%;
     }
 
     .teacher .box-container .box p{
