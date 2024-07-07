@@ -64,7 +64,6 @@ section{
     border-radius: 5rem;
     background: var(--red);
     color: #fff;
-    /* letter-spacing: 1px; */
     font-size: 2rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -843,9 +842,15 @@ iframe{
 @media(max-width: 730px){
 
     .btn{
-        /* align-items: center; */
-        padding: .7rem 3rem;
-    }
+    display: inline-block;
+    margin: 1rem auto auto 16rem; 
+    padding: .7rem 3rem;
+    border-radius: 5rem;
+    background: var(--red);
+    color: #fff;
+    font-size: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
 
     header{
         position: fixed;
