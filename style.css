@@ -70,7 +70,7 @@ section{
 
 .btn-sec{
     display: inline-block;
-    margin: 1rem auto auto 10rem;
+    margin: 1rem auto auto 3rem;
     padding: .7rem 3rem;
     border-radius: 5rem;
     background: var(--red);
@@ -307,6 +307,7 @@ header a h3{
 .about .content{
     flex-basis: 50%;
     align-items: center;
+    justify-content: center;
 }
 
 .about .content h3{
@@ -842,15 +843,26 @@ iframe{
 @media(max-width: 730px){
 
     .btn{
-    display: inline-block;
-    margin: 1rem auto auto 16rem; 
-    padding: .7rem 3rem;
-    border-radius: 5rem;
-    background: var(--red);
-    color: #fff;
-    font-size: 2rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
-}
+        display: inline-block;
+        margin: 1rem auto auto 16rem; 
+        padding: .7rem 3rem;
+        border-radius: 5rem;
+        background: var(--red);
+        color: #fff;
+        font-size: 2rem;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-sec{
+        display: inline-block;
+        margin: 1rem auto auto 37%;
+        padding: .7rem 3rem;
+        border-radius: 5rem;
+        background: var(--red);
+        color: #fff;
+        font-size: 2rem;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    }
 
     header{
         position: fixed;
@@ -935,6 +947,12 @@ iframe{
         object-fit:cover;
     }
 
+    .about .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .about .content h3{
         text-align: center;
     }
@@ -942,6 +960,7 @@ iframe{
     .about .content .founding{
         font-weight: 600;
     }
+
     .about .content p{
         line-height: 1.5em;
         text-align: center;
@@ -961,6 +980,7 @@ iframe{
     }
 
     /* TEACHER */
+    
     .teacher .box-container .box{
         overflow-y: scroll;
     }
@@ -992,7 +1012,7 @@ iframe{
     .testimonial-col img {
         margin: auto .4%;
         min-width: 100%;
-        height: 35em;
+        height: 20em;
         border-radius: 5px;
     }
 
@@ -1089,5 +1109,6 @@ iframe{
         display: block;
         text-align: center;
     }
- */
+
+} */
 
