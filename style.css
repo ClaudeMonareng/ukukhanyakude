@@ -52,9 +52,11 @@ section{
 }
 
 .background2{
-    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.3)), url(images/stand.jpg);
+    background: linear-gradient(rgba(4, 9, 30, 0.5), 
+                                rgba(4, 9, 30, 0.3)), 
+                                url(images/founders\ -\ Copy\ -\ Copy.jpg) no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
 }
 
 .btn{
@@ -118,19 +120,15 @@ section{
 header{
     position: fixed;
     display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    top: 0; left: 0; right: 0;
     background-position: bottom;
     background-size: cover;
     z-index: 10000;
-    padding: 5rem 5%;
-    align-items: center;
-    padding-bottom: 4rem;
-    justify-content: space-between;
-    height: 10vh;
-    margin: 0 auto;
-    min-width: 100%;
+    padding: 1rem 5%;
+    /* padding-bottom: 4rem; */
+    /* height: 10vh; */
 }
 
 header.sticky{
@@ -143,23 +141,24 @@ header.sticky{
 
 header .logo {
     display: flex;
-    align-items:center;
-    justify-content: center;
+    align-items: center;
+    /* margin: 0 0 0 10px; */
 }
 
-header .logo img{
-    width: 8rem;
-    margin-top: -1em;
-    height: 8rem;
+header a img{
+    width: 4em;
+    height: 2.5em;
+    /* padding: 0 1.2em -3em; */
+    font-size: 2.5rem;
     border-radius: 100%;
-}
-
-header .logo h3{
-    padding-bottom: 1em;
+    object-fit: fill;
+    object-position: center;
 }
 
 header .navbar{
-    margin-left: 18em;
+    /* margin-left: 18em; */
+    /* float: right; */
+    justify-content:end;
 }
 
 header .navbar a{
@@ -515,7 +514,7 @@ header a h3{
     flex: 1 1 27rem;
     padding: 2rem 3rem;
     margin: 1rem;
-    height: 68vh;
+    height: 37em;
     max-height: 100%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border: .1rem solid rgba(0, 0, 0, .3);
@@ -551,6 +550,7 @@ header a h3{
 
 .teacher .box-container .box p{
     font-size: 2rem;
+    /* padding-bottom: 2rem; */
 }
 
 .teacher .box-container .box .share{
@@ -736,11 +736,11 @@ iframe{
 
 @media(max-width: 1200px){
 
-    header{
+    /* header{
        min-height: 10em;
-    }
+    } */
 
-    header .logo {
+    /* header .logo {
         display: flex;
         align-items:center;
         justify-content: center;
@@ -758,7 +758,7 @@ iframe{
         padding-top: 3.5em;
         font-size:x-large;
         text-align: center;
-    }
+    } */
     
     header .navbar{
         display: none;
@@ -844,7 +844,7 @@ iframe{
 
     .btn{
         display: inline-block;
-        margin: 1rem auto auto 16rem; 
+        margin: 1rem auto auto 30%;
         padding: .7rem 3rem;
         border-radius: 5rem;
         background: var(--red);
@@ -864,7 +864,15 @@ iframe{
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     }
 
-    header{
+    .background2{
+        background: linear-gradient(rgba(4, 9, 30, 0.5), 
+                                    rgba(4, 9, 30, 0.3)), 
+                                    url(images/founders\ -\ Copy\ -\ Copy.jpg) no-repeat;
+        background-size: cover;
+        background-position:center;
+    }
+
+    /* header{
         position: fixed;
         display: flex;
         top: 0;
@@ -878,9 +886,9 @@ iframe{
         padding-bottom: 1rem;
         justify-content: space-between;
         min-height: 5em;
-    }
+    } */
 
-    header .logo img{
+    /* header .logo img{
         margin-bottom: 6em;
         text-align: center;
     }
@@ -891,7 +899,7 @@ iframe{
         padding: 1em 1rem;
         color: var(--red);
         font-weight: 600;
-    }
+    } */
 
     header .navbar{
         display: none;
