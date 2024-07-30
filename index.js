@@ -14,7 +14,7 @@
         }
 
         // STICKY NAVBAR                            
-        // NAVIGATION BAR EFFECTS ON SCROLL 
+        // NAVIGATION BAR EFFECTS ON SCROLL
 
         window.addEventListener("scroll", function () {
             const header = document.querySelector("header");
