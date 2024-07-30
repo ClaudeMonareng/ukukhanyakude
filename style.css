@@ -511,6 +511,7 @@ header a h3{
 }
 
 .teacher .box-container .box{
+    line-height:normal;
     flex: 1 1 27rem;
     padding: 2rem 3rem;
     margin: 1rem;
@@ -523,7 +524,7 @@ header a h3{
     background: url(images/card-bg3.png) no-repeat;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .teacher .box-container .box:hover{
