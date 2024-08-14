@@ -47,6 +47,8 @@ window.addEventListener("scroll", ()=>{
     });
 });
 
+        // STICKY NAVBAR                            
+        // NAVIGATION BAR EFFECTS ON SCROLL
 
 // PORTFOLIO SECTION - MODAL
 
