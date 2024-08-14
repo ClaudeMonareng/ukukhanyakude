@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>ISIKHALISEZWE | Official Website</title>
+</head>
+<body>
+     <header>
+        <a href="index.html" class="logo"><img src="images/isikhalisezwe.png"><h3>Isikhalisezwe</h3></a>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="learningPortal.html">Learning Portal</a>
+            <a href="applyOnline.html">Apply Online</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- CALL TO ACTION -->
+
+    <section class="cta section">
+        <h1>Admissions <span>2025</span></h1>
+        <a href="registration-form.php" class="admin-btn">Online Registration Welcome</a>
+    </section>
+
+    <!-- FOOTER -->
+
+    <section class="footer section2">
+        <h4>ISIKHALISEZWE HIGH SCHOOL</h4>
+        <p>Imfundo Yisikhali</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by inkanyezi Creatives</p>
+    </section>
+
+    <script>
+
+        // STICKY NAVBAR                             
+        // NAVIGATION BAR EFFECTS ON SCROLL
+
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
