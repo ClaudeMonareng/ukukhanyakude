@@ -13,7 +13,7 @@
             navbar.classList.remove('nav-toggle');
         }
 
-        // STICKY NAVBAR                            
+        // STICKY NAVBAR                             
         // NAVIGATION BAR EFFECTS ON SCROLL
 
         window.addEventListener("scroll", function () {

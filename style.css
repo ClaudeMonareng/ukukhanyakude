@@ -158,7 +158,8 @@ header a img{
 header .navbar{
     /* margin-left: 18em; */
     /* float: right; */
-    justify-content:end;
+    justify-content: end;
+    margin: 2em 0;
 }
 
 header .navbar a{
@@ -531,7 +532,9 @@ header a h3{
 
 .teacher .box-container .box:hover{
     transform: scale(1.015);
-    overflow-y: auto;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(11, 11, 85) yellow;
 }
 
 .teacher .box-container .box img{
@@ -608,7 +611,10 @@ header a h3{
 
 .testimonials .box-container .box:hover{
     transform: scale(1.015);
-    overflow-y: auto;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(11, 11, 85) yellow;
+    scrollbar-gutter:both-edges;
 }
 
 .testimonials .box-container .box .row{
