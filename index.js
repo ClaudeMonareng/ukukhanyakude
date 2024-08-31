@@ -1,54 +1,27 @@
 
-// RESPONSIVE NAVIGATION MENU TOGGLE
 
-const menuBtn = document.querySelector(".nav-menu-btn");
-const closeBtn = document.querySelector(".nav-close-btn");
-const navigation = document.querySelector(".navigation");
-const navItems = document.querySelectorAll(".nav-items a");
+// TOGGLE NAVBAR
 
-menuBtn.addEventListener("click", () => {
-    navigation.classList.add("active");
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.addEventListener('click', ()=>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('nav-toggle');
 });
 
-closeBtn.addEventListener("click", () => {
-    navigation.classList.remove("active");
-});
+window.onscroll = ()=>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('nav-toggle');
+};
 
-navItems.forEach((navItem) => {
-    navItem.addEventListener("click", () => {
-        navigation.classList.remove("active");
-    });
-});
-
-// STICKY NAVBAR                             
+// STICKY NAVBAR
 // NAVIGATION BAR EFFECTS ON SCROLL
 
-    window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-    });
-
-// NAVIGATION MENU ITEMS ACTIVE ON PAGE SCROLL
-
-window.addEventListener("scroll", ()=>{
-    const sections = document.querySelectorAll("section");
-    const scrollY = window.pageYOffset;
-
-    sections.forEach(current => {
-        let sectionHeight = current.offsetHeight;
-        let sectionTop = current.offsetTop - 50;
-        let id = current.getAttribute("id");
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector(".nav-items a[href*=" + id + "]").classList.add("active");
-        }else{
-            document.querySelector(".nav-items a[href*=" + id + "]").classList.remove("active");
-        }
-    });
+window.addEventListener("scroll", function () {
+    const header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
 });
-
-        // STICKY NAVBAR                             
-        // NAVIGATION BAR EFFECTS ON SCROLL
 
 // PORTFOLIO SECTION - MODAL
 
@@ -73,3 +46,22 @@ portfolioCloseBtns.forEach((portfolioCloseBtn) => {
         });
     });
 });
+
+//OUR CLIENTS - SWIPER
+
+// var swiper = new Swiper(".sponsors-swiper", {
+//     effect: "coverflow",
+//     grabCursor: true,
+//     centeredSlides: true,
+//     slidesPerView: "auto",
+//     coverflowEffect: {
+//     rotate: 50,
+//     stretch: 0,
+//     depth: 100,
+//     modifier: 1,
+//     slideShadows: true,
+//     },
+//     pagination: {
+//     el: ".swiper-pagination",
+//     },
+// });
