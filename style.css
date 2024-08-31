@@ -63,11 +63,11 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1em;
 }
 
 .btn{
     display: inline-block;
-    /* margin: 1rem auto auto 25rem;  */
     padding: .7rem 3rem;
     border-radius: 5rem;
     background: var(--red);
@@ -127,11 +127,6 @@ header.sticky{
     box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
 }
 
-header .logo {
-    display: flex;
-    align-items: center;
-}
-
 header a img{
     width: 4em;
     height: 2.5em;
@@ -143,7 +138,6 @@ header a img{
 
 header a h3{
     font-size: 2em;
-    padding: 1em 0 0 10px;
     color: antiquewhite;
     font-weight: 600;
 }
@@ -171,14 +165,6 @@ header .navbar a:hover{
     border-radius: .5rem;
     display: none;
 }
-
-
-/* header a h3{
-    font-size: 2em;
-    padding: 1em 0 0 10px;
-    color: var(--red);
-    font-weight: 600;
-} */
 
 /* HOME SECTION */
 
@@ -286,6 +272,7 @@ header .navbar a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 2em;
 }
 
 .about .image img{
@@ -548,7 +535,6 @@ header .navbar a:hover{
 
 .teacher .box-container .box p{
     font-size: 2rem;
-    /* padding-bottom: 2rem; */
 }
 
 .teacher .box-container .box .share{
@@ -723,11 +709,11 @@ header .navbar a:hover{
     border-color: var(--red);
     color: #fff;
 }
-
 iframe{
-    width: 40vw;
-    height: 80vh;
-    margin-left: 6em;
+    width: 60vw;
+    height: 100vh;
+    margin-left: 0;
+    border: 2px solid #333;
 }
 
 /* FOOTER */
@@ -873,7 +859,7 @@ iframe{
 
     .flex-center{
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -885,35 +871,6 @@ iframe{
         background-size: cover;
         background-position:center;
     }
-
-    /* header{
-        position: fixed;
-        display: flex;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-position: bottom;
-        background-size: cover;
-        z-index: 10000;
-        padding: 1rem 5%;
-        align-items: center;
-        padding-bottom: 1rem;
-        justify-content: space-between;
-        min-height: 5em;
-    } */
-
-    /* header .logo img{
-        margin-bottom: 6em;
-        text-align: center;
-    }
-
-    header .logo h3{
-        text-align: center;
-        font-size: 2.5em;
-        padding: 1em 1rem;
-        color: var(--red);
-        font-weight: 600;
-    } */
 
     header .navbar{
         display: none;
@@ -1065,7 +1022,7 @@ iframe{
     
     iframe{
         width: 91vw;
-        height: 60vh;
+        height: 30vh;
         margin-left: 0;
     }
 }
