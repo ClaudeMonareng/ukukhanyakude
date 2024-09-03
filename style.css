@@ -857,13 +857,6 @@ iframe{
 
 @media(max-width: 730px){
 
-    .flex-center{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     .background2{
         background: linear-gradient(rgba(4, 9, 30, 0.5), 
                                     rgba(4, 9, 30, 0.3)), 
