@@ -711,7 +711,7 @@ header .navbar a:hover{
 }
 iframe{
     width: 60vw;
-    height: 100vh;
+    height: 90vh;
     margin-left: 0;
     border: 2px solid #333;
 }
@@ -776,11 +776,11 @@ iframe{
     }
 
     /* ABOUT */
-
+  
     .about .image img{
-        flex-basis: 35%;
-        max-width: 100%;
-        max-height: 100%;
+        flex-basis: 50%;
+        width: 40vw;
+        height: 38vh;
         object-fit: cover;
     }
 
@@ -852,7 +852,14 @@ iframe{
     .contact .row{
         flex-flow: column;
         align-items: flex-start;
-    } 
+    }     
+
+    iframe{
+        width: 60vw;
+        height: 40vh;
+        margin-left: 0;
+        border: 2px solid #333;
+    }
 }
 
 @media(max-width: 730px){
